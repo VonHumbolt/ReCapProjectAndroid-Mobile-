@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/registerItem"
+        android:title="Kayıt Ol"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/loginItem"
+        android:title="Giriş Yap"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/profileItem"
+        android:title="Profil"/>
+
+</menu>

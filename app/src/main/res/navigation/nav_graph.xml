@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/carsFragment">
+
+    <fragment
+        android:id="@+id/carsFragment"
+        android:name="com.kaankaplan.recapproject.fragments.CarsFragment"
+        android:label="CarsFragment" >
+        <action
+            android:id="@+id/action_carsFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_carsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_carsFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_carsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.kaankaplan.recapproject.fragments.DetailFragment"
+        android:label="DetailFragment" >
+        <argument
+            android:name="carDto"
+            app:argType="com.kaankaplan.recapproject.models.CarsDto" />
+        <action
+            android:id="@+id/action_detailFragment_to_rentCarFragment"
+            app:destination="@id/rentCarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rentCarFragment"
+        android:name="com.kaankaplan.recapproject.fragments.RentCarFragment"
+        android:label="RentCarFragment" >
+        <action
+            android:id="@+id/action_rentCarFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.kaankaplan.recapproject.fragments.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_carsFragment"
+            app:destination="@id/carsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.kaankaplan.recapproject.fragments.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_carsFragment"
+            app:destination="@id/carsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.kaankaplan.recapproject.fragments.ProfileFragment"
+        android:label="ProfileFragment" />
+</navigation>
