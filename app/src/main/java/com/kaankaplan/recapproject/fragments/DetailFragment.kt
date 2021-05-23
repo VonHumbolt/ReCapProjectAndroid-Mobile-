@@ -110,9 +110,6 @@ class DetailFragment : Fragment(R.layout.fragment_detail) {
         val datePicker = DatePickerDialog(requireContext(), DatePickerDialog.OnDateSetListener { _, y, m, d ->
                 view.text = "" + d + "." + m + "." + y
 
-//                val dateFormat = SimpleDateFormat("dd.MM.YYYY")
-//                date = dateFormat.parse("" + d + "." + m + "." + y)
-
             }, year, month, day
         )
 
